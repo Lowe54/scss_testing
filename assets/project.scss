@@ -1,0 +1,10 @@
+@import "core/colors";
+@import "mixins/mixins";
+
+h1{
+    color:$black;
+}
+
+.btn{
+    @include darkenButton(white, red, 200px);
+}

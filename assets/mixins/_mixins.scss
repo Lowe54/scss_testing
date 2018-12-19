@@ -1,0 +1,47 @@
+@mixin unicornify() {
+    background-color: pink;
+    color:white;
+    @content;
+    font-size:30px;
+    font-weight: bold;
+}
+
+@mixin coreButton($size) {
+    width: $size;
+    height: $size / 2;
+    border-radius:15px;
+    
+}
+
+@mixin invertButton($color, $bgcolor, $size) {
+    @include coreButton($size);
+    background-color: $bgcolor;
+    color: $color;
+    border: 2px solid $color;
+    &:hover{
+        background-color:($color);
+        color: $bgcolor;
+        border: 2px solid $bgcolor;
+    }
+   
+}
+
+@mixin lightenButton($color, $bgcolor, $size) {
+    @include coreButton($size);
+    background-color: $bgcolor;
+    color: $color;
+    border: 2px solid $color;
+    &:hover{
+        background-color:(lighten($bgcolor, 25%));
+    }         
+}
+
+@mixin darkenButton($color, $bgcolor, $size) {
+    @include coreButton($size);
+    background-color: $bgcolor;
+    color: $color;
+    border: 2px solid $color;
+    &:hover{
+        background-color:(darken($bgcolor, 25%));
+    }         
+}
