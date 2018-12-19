@@ -1,0 +1,54 @@
+//SASS SCRIPT
+/*@function pxToEM($value, $base) {
+    @return ($value / $base) + em;
+}
+
+h2{
+    font-size: pxToEM(32, 16);
+}*/
+
+//Variables
+$blue: #0997d3;
+$red: #e84610;
+$green: #bada55;
+$black: #000;
+$white: #FFF;
+
+
+//LIST
+// $colorsList : $blue, $red, $green, $black, $white;
+
+//MAP
+$colors: (
+    black: #000000,
+    red: #e84610,
+    green: #bada55,
+    white: #ffffff,
+    blue: #0997d3
+);
+
+@each $key, $value in $colors {
+    .item-#{$key} {
+        background-color: $value;
+    }
+}
+
+$width: 300px;
+$height: 500px;
+
+#two{
+   // background-color: $black;
+    color: $white;
+
+
+    div {
+        width: $width;
+        height: $height;
+        border: 1px solid $white;
+    }
+
+    $class: container;
+    div.#{$class} {
+        background-color: orange;
+    }
+}
