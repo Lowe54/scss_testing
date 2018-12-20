@@ -10,5 +10,28 @@ h1 {
   border: 2px solid white; }
   .btn:hover {
     background-color: maroon; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .btn {
+      font-size: 10px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .btn {
+      font-size: 16px; } }
+
+#box {
+  background-color: #bada55;
+  width: 200px;
+  height: 100px; }
+
+.container-1 {
+  background-color: red; }
+
+.container-2 {
+  background-color: red; }
+
+.container-3 {
+  background-color: red; }
+
+.container-4 {
+  background-color: red; }
 
 /*# sourceMappingURL=project.css.map */

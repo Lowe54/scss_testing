@@ -45,3 +45,9 @@
         background-color:(darken($bgcolor, 25%));
     }         
 }
+
+@mixin box($size, $color){
+    background-color: $color;
+    width: $size;
+    height: $size / 2;
+}
